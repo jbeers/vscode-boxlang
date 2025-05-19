@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [] - 2025-05-19
+
 - BLIDE-112 Stop syncing certain settings
 - Bump BoxLang to 1.1.0
 - Add pre-release to VSCode Marketplace
@@ -98,13 +100,13 @@
 - Added experimental support for file formatting
 - JSON schema for boxlang.json
 
-[Unreleased]: https://github.com/ortus-boxlang/vscode-boxlang/compare/v1.3.24...HEAD
+[Unreleased]: https://github.com/jbeers/vscode-boxlang/compare/v...HEAD
+
+[]: <https://github.com/jbeers/vscode-boxlang/compare/v1.3.24...v>
 
 [1.3.24]: https://github.com/ortus-boxlang/vscode-boxlang/compare/v1.3.24...v1.3.24
 
-
 [1.3.21]: https://github.com/ortus-boxlang/vscode-boxlang/compare/v1.3.21...v1.3.21
-
 
 [1.3.20]: https://github.com/ortus-boxlang/vscode-boxlang/compare/v1.3.18...v1.3.20
 
@@ -131,7 +133,6 @@
 [1.3.7]: https://github.com/ortus-boxlang/vscode-boxlang/compare/v1.3.5...v1.3.7
 
 [1.3.5]: https://github.com/ortus-boxlang/vscode-boxlang/compare/v1.3.5...v1.3.5
-
 
 [1.3.4]: https://github.com/ortus-boxlang/vscode-boxlang/compare/v1.3.3...v1.3.4
 
