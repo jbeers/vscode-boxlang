@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.9.0] - 2025-05-19
+
 ## [1.8.2] - 2025-05-19
 
 ## [1.6.12] - 2025-05-19
@@ -102,7 +104,9 @@
 - Added experimental support for file formatting
 - JSON schema for boxlang.json
 
-[Unreleased]: https://github.com/jbeers/vscode-boxlang/compare/v1.8.2...HEAD
+[Unreleased]: https://github.com/jbeers/vscode-boxlang/compare/v1.9.0...HEAD
+
+[1.9.0]: https://github.com/jbeers/vscode-boxlang/compare/v1.8.2...v1.9.0
 
 [1.8.2]: https://github.com/jbeers/vscode-boxlang/compare/v1.6.12...v1.8.2
 
