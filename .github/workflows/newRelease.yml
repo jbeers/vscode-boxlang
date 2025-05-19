@@ -34,7 +34,7 @@ jobs:
       contents: write
     with:
         pre-release: false
-        ref: ${{ needs.createReleaseVersion.outputs.newVersion }}
+        ref: v${{ needs.createReleaseVersion.outputs.newVersion }}
 
   updateDevelopment:
     name: Update Development Branch
