@@ -37,10 +37,6 @@ jobs:
       checks: write
       contents: write
     steps:
-      - name: Test
-        run: |
-            echo "${{ inputs.ref }}"
-            exit 1
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
