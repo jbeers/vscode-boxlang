@@ -93,7 +93,7 @@ jobs:
           if: inputs.pre-release == false
           with:
             changelogPath: ./changelog.md
-            tag: v${{ env.VERSION }}
+            tag: v${{ steps.setup.outputs.newVersion }}
 
         - name: Cleanup changelog
           if: inputs.pre-release == false
@@ -108,7 +108,7 @@ jobs:
             author_name: Github Actions
             author_email: info@ortussolutions.com
             push: false
-            message: "Finalized changelog for v${{ env.VERSION }}"
+            message: "Finalized changelog for v${{ steps.setup.outputs.newVersion }}"
             add: changelog.md
 
         - name: Commit Version Bump
