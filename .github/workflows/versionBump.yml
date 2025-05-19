@@ -69,7 +69,7 @@ jobs:
                 $nextMinor = $minor + 1
                 $nextPatch = 0
             }
-            elseif( $env:PRE_RELEASE -eq $false -and -not $minorIsEven -eq $true ) {
+            elseif( $env:PRE_RELEASE -eq $false -and $minorIsEven -eq $true ) {
                 Write-Host "Building a full release: setting new minor"
                 $nextMinor = $minor + 1
                 $nextPatch = 0
