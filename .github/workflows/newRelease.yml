@@ -52,11 +52,11 @@ jobs:
           git config user.email "info@ortussolutions.com"
 
       - name: Fetch all branches
-        run: git fetch origin master
+        run: git fetch origin main
 
-      - name: Merge master into development
+      - name: Merge main into development
         run: |
-          git merge origin/master --no-edit
+          git merge origin/main --no-edit
 
       - name: Push changes
         run: git push origin development
