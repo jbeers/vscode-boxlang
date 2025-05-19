@@ -15,6 +15,9 @@ on:
       newVersion:
         description: "The new version number"
         value: ${{ jobs.createReleaseVersion.outputs.newVersion }}
+      isPatch:
+        description: "If this build was a patch build"
+        value: ${{ jobs.createReleaseVersion.outputs.isPatch }}
 
 jobs:
   createReleaseVersion:
@@ -22,6 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       newVersion: ${{ steps.setup.outputs.newVersion }}
+      isPatch: ${{ steps.setup.outputs.isPatch }}
     steps:
         - name: Checkout Development Repository
           uses: actions/checkout@v4
@@ -77,7 +81,9 @@ jobs:
             }
 
             $newVersion = "$major.$nextMinor.$nextPatch"
+            $isPatch = $nextPath -ne 0
             echo "newVersion=$newVersion" >> $env:GITHUB_OUTPUT
+            echo "isPatch=$isPatch" >> $env:GITHUB_OUTPUT
             npm version $newVersion --no-git-tag-version
 
             Write-Output "New version: $newVersion"
