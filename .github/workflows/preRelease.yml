@@ -9,9 +9,9 @@ on:
 
 
 #Cancel running builds if another push to branch is made while this build is running
-concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+#   cancel-in-progress: true
 
 jobs:
   validatePreReleaseVersion:
@@ -57,7 +57,8 @@ jobs:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
         run: |
           ls .tmp
-          npx vsce publish --packagePath .tmp/${{ needs.buildAndPackage.outputs.packageName }} --pre-release
+          echo "publishing pre release"
+        #   npx vsce publish --packagePath .tmp/${{ needs.buildAndPackage.outputs.packageName }} --pre-release
 
   prepNext:
     runs-on: ubuntu-latest
