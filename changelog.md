@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.8.2] - 2025-05-19
+
 ## [1.6.12] - 2025-05-19
 
 - BLIDE-112 Stop syncing certain settings
@@ -100,7 +102,9 @@
 - Added experimental support for file formatting
 - JSON schema for boxlang.json
 
-[Unreleased]: https://github.com/jbeers/vscode-boxlang/compare/v1.6.12...HEAD
+[Unreleased]: https://github.com/jbeers/vscode-boxlang/compare/v1.8.2...HEAD
+
+[1.8.2]: https://github.com/jbeers/vscode-boxlang/compare/v1.6.12...v1.8.2
 
 [1.6.12]: https://github.com/jbeers/vscode-boxlang/compare/v1.3.24...v1.6.12
 
