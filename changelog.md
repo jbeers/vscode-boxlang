@@ -2,8 +2,6 @@
 
 ## [Unreleased]
 
-## [] - 2025-05-19
-
 - BLIDE-112 Stop syncing certain settings
 - Bump BoxLang to 1.1.0
 - Add pre-release to VSCode Marketplace
@@ -101,8 +99,6 @@
 - JSON schema for boxlang.json
 
 [Unreleased]: https://github.com/jbeers/vscode-boxlang/compare/v...HEAD
-
-[]: <https://github.com/jbeers/vscode-boxlang/compare/v1.3.24...v>
 
 [1.3.24]: https://github.com/ortus-boxlang/vscode-boxlang/compare/v1.3.24...v1.3.24
 
