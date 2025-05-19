@@ -87,4 +87,5 @@ jobs:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
         run: |
           ls .tmp
-          npx vsce publish --packagePath .tmp/${{ needs.buildAndPackageRelease.outputs.packageName }}
+          echo "would publish release"
+        #   npx vsce publish --packagePath .tmp/${{ needs.buildAndPackageRelease.outputs.packageName }}
