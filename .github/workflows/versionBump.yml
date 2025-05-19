@@ -59,12 +59,12 @@ jobs:
             $nextMinor = $minor
             $nextPatch = $patch
 
-            if( $env:PRE_RELEASE -eq $true -and -not $minorIsEven ) {
+            if( $env:PRE_RELEASE -eq $true -and $minorIsEven ) {
                 Write-Host "Building a pre-release: bumping patch"
                 $nextMinor = $minor
                 $nextPatch += 1
             }
-            elseif( $env:PRE_RELEASE -eq $true -and $minorIsEven ) {
+            elseif( $env:PRE_RELEASE -eq $true -and -not $minorIsEven ) {
                 Write-Host "Building a pre-release: setting new minor"
                 $nextMinor = $minor + 1
                 $nextPatch = 0
