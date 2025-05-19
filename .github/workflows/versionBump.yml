@@ -90,7 +90,7 @@ jobs:
 
         - name: Update changelog [unreleased] with latest version
           uses: thomaseizinger/keep-a-changelog-new-release@2.0.0
-          if: inputs.pre-release == 'false'
+          if: inputs.pre-release == false
           with:
             changelogPath: ./changelog.md
             tag: v${{ env.VERSION }}
